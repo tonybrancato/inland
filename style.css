@@ -1,0 +1,25 @@
+main {
+  margin-top: 100px;
+}
+
+.content-section {
+  padding: 100px 20px 0 20px;
+}
+
+.repositioning-method {
+  border-right: 1px solid grey;
+}
+
+.repositioning-types {
+  border-top: 1px solid grey;
+}
+
+.middle-col {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.text-center {
+  text-align: center;
+}
+
