@@ -10,8 +10,8 @@
 </head>
 <body>
 	<header>
-		<div class="container">
-			<nav class="navbar navbar-expand-xl navbar-light" style="background-color: #FFF;">
+		<nav class="navbar navbar-expand-xl navbar-light fixed-top" style="background-color: #FFF;">
+			<div class="container">
 				<a class="navbar-brand" href="#">
 					<img src="./imgs/ils-logo.jpg" width="202" height="75" alt="inland logo">
 				</a>
@@ -27,7 +27,7 @@
 							<a class="nav-link" href="#">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#repo">Container & Equipment Repositioning</a>
+							<a class="nav-link" href="#repositioning">Container & Equipment Repositioning</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#drayage">Drayage</a>
@@ -49,8 +49,8 @@
 						</li>
 					</ul>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 	</header>
 
 	<main class="container">
@@ -61,34 +61,36 @@
 			<p>For over 20 years Inland Logistics Solutions has provided service to shippers of all types and sizes. </p>
 		</section>
 
-		<section class="container repo" id="repo">
-				<h2 class="title">Container & Equipment Repositioning</h2>
-				<div class="container">
-					
-					<div>
-						<h3>Our Method</h3>
+		<section role="content" class="container repo content-section" id="repositioning">
+			<h2 class="title">Container & Equipment Repositioning</h2>
+			<div class="container">
+				<div class="row content-block">
+					<div class="col repositioning-method">
+						<h3 class="text-center">Our Method</h3>
 						<p>Utilizing our extensive network of <strong>flatbed </strong>and <strong>specialty trailer carriers</strong> , we can 
 						provide unmatched one-way or round-trip equipment repositioning. The use of flatbeds
 						in order to accomplish equipment repositioning gives shippers access to a larger
 						carrier base at competitive rates.</p>
 					</div>
 					
-					<div>
-						<h4>Credentials</h4>
+					<div class="col">
+						<h3 class="text-center">Credentials</h3>
 						<p>We have access to every major port on all 3 US coasts and are active members of the UIIA, simplifying many movements that
 							might otherwise be complicated and cause the shipper or driver to spend more time on a load than needed. Let our experience 
 							be your asset. 
 						</p>
-					</div>
-					
-					<div>
+					</div>						
+				</div>
+
+				<div class="row content-block repositioning-types">
+					<div class="col">
 						<h4>Container Repositioning</h4>
 						<p>We have extensive experience repositioning every type of container. Whether you need to move a 10' container, two 40'
 							flat rack units, or two 20' containers, we can get it done.  
 						</p>
 					</div>
 
-					<div>
+					<div class="col middle-col">
 						<h4>Chassis Repositioning</h4>
 						<p>As a natural evolution from hauling containers on flatbed trailers, we also reposition container chassis. Waiting to
 							find a power-only unit willing to move a one-way load can be too time consuming and often complicated. By repositioning
@@ -96,7 +98,7 @@
 						</p>
 					</div>
 					
-					<div>
+					<div class="col">
 						<h4>Generator Set Repositioning</h4>
 						<p>In order to provide a full repositioning service to equipment providers and ocean liners, we also reposition generator 
 							sets or "gensets". Typically, we can move anywhere from one to 18 "nose-mount"/"clip-on" generators or 8-10 
@@ -104,11 +106,11 @@
 							supply your reefer units or get the units to a repair facility. Wherever they may need to go, we can get them there.
 						</p>
 					</div>
-
-				</div>
+				</div>					
+			</div>
 		</section>
 
-		<section id="drayage">
+		<section id="drayage" class="content-section">
 			<h2 class="title">Container Drayage</h2>
 			<div class="container">
 				
@@ -147,7 +149,7 @@
 			</div>				
 		</section>
 
-		<section id="opportunities">
+		<section id="opportunities content-section">
 			<h2>Carrier Opportunities</h2>
 				<div class="container">
 
