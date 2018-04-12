@@ -1,5 +1,59 @@
+* {
+  font-family: 'raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'oxygen', sans-serif;
+}
+
+h3, h4 {
+  font-weight: bold;
+}
+
 main {
   margin-top: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar, .navbar-light {
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 95%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 95%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 95%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  font-size: 1.05em;
+}
+
+#repositioning, #opportunities {
+  height: 100vh;
+}
+
+#repositioning {
+  background-image: linear-gradient(to top right, rgba(128, 128, 128, .72), rgba(0, 76, 138, .72)),
+                    url('./imgs/containers.jpg');
+  background-size: cover;
+  filter: grayscale(20%);
+  filter: opacity(80%);
+  background-attachment: fixed;
+  color: white;
+}
+
+#repositioning fieldset {
+  border: 4px ridge white;
+  /* border-style:  */
+}
+
+#opportunities {
+  background-image: url('./imgs/truck2.png');
+  background-size: cover;
+  filter: contrast(.7);
+}
+
+.title {
+  margin-bottom: 80px;
+  font-size: 2.5em;
 }
 
 .content-section {
@@ -14,6 +68,10 @@ main {
   border-top: 1px solid grey;
 }
 
+.repositioning-type, #repositioning p {
+  padding: 10px 20px;
+}
+
 .middle-col {
   border-left: 1px solid grey;
   border-right: 1px solid grey;
@@ -23,3 +81,48 @@ main {
   text-align: center;
 }
 
+.new-carrier {
+  padding: 0 0 0 40px;
+  max-width: 70%;
+}
+
+.packet {
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.packet-return {
+  padding: 0px 175px 0px 0px;
+}
+
+.download {
+  color: #007bff;
+}
+
+.download:hover {
+  color: #5600ff;
+}
+
+legend {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
+/* .repositioning-intro { 
+  width:100%; 
+  text-align:center; 
+  border-bottom: 1px solid black; 
+  line-height:0.1em; 
+  margin:10px 0 20px; 
+} 
+
+.repositioning-intro span { 
+  background:#fff; 
+  z-index: 1;
+  padding:0 10px; 
+} */
