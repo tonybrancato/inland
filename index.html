@@ -54,14 +54,18 @@
 		</nav>
 	</header>
 
-	<main class="">
+	<main>
 		<section class="about" id="about">
 			<div class="container">
-				<h2>About Us</h2>
+				<h2 class="name title">Inland Logistics Solutions</h2>
 				<h3>The Inland Advantage</h3>
-				<p>As a specialized 3</p>
-				<p>For over 20 years Inland Logistics Solutions has provided service to shippers of all types and sizes. </p>
-			</div>
+				<p class="about-info">As a specialized 3PL, we have provided repositioning and drayage services to ocean liners and equipment 
+					providers of all sizes for the past 20 years.</p>
+				<div class="experts hidden">
+						<h4>Experts in</h4>
+						<a class="btn btn-primary" href="#repositioning" role="button">Equipment Repositioning</a> & <a class="btn btn-primary" href="#drayage" role="button">Drayage</a>
+				</div>
+ 			</div>
 		</section>
 
 		<section role="content" class="repo content-section" id="repositioning">
@@ -71,7 +75,7 @@
 					<div class="row content-block">
 						<div class="col repositioning-method">
 							<fieldset>
-								<legend><h3 class="text-center repositioning-intro"><span>Our Method</span></h3></legend>
+								<legend class="repo-legend"><h3 class="text-center repositioning-intro"><span>Our Method</span></h3></legend>
 								<p>Utilizing our extensive network of <strong>flatbed </strong>and <strong>specialty trailer carriers</strong> , we can 
 									provide unmatched one-way or round-trip equipment repositioning. The use of flatbeds
 									in order to accomplish equipment repositioning gives shippers access to a larger
@@ -83,7 +87,7 @@
 						
 						<div class="col">
 							<fieldset>
-								<legend><h3 class="text-center repositioning-intro"><span>Credentials</span></h3></legend>
+								<legend class="repo-legend"><h3 class="text-center repositioning-intro"><span>Credentials</span></h3></legend>
 								<p>We have access to every major port on all 3 US coasts and are active members of the UIIA, simplifying many movements that
 										might otherwise be complicated and cause the shipper or driver to spend more time on a load than needed. Let our experience 
 										be your asset. 
@@ -95,7 +99,7 @@
 					<div class="row content-block repositioning-types">
 						<div class="col repositioning-type">
 							<fieldset>
-								<legend><h4 class="text-center">Container Repositioning</h4></legend>
+								<legend class="repo-legend"><h4 class="repositioning-intro text-center">Container Repositioning</h4></legend>
 								<p>We have extensive experience repositioning every type of container. Whether you need to move a 10' container, two 40'
 										flat rack units, or two 20' containers, we can move the units to any port, rail yard, or off-dock facility. 
 										As long as a lift is present to unload the flatbed, we will reposition the unit quickly, safely, and efficiently. 
@@ -105,7 +109,7 @@
 	
 						<div class="col middle-col repositioning-type">
 							<fieldset>
-								<legend><h4 class="text-center">Chassis Repositioning</h4></legend>
+ 								<legend class="repo-legend"><h4 class="repositioning-intro text-center">Chassis Repositioning</h4></legend>
 								<p>As a natural evolution from hauling containers on flatbed trailers, we also reposition container chassis. Waiting to
 										find a power-only unit willing to move a one-way load is too time consuming. By repositioning
 										chassis on flatbeds, you can avoid that headache and move up to four 40' chassis or six 20' chassis per flatbed.
@@ -117,7 +121,7 @@
 						
 						<div class="col repositioning-type">
 							<fieldset>
-								<legend><h4 class="text-center">Genset Repositioning</h4></legend>
+								<legend class="repo-legend"><h4 class="repositioning-intro text-center">Genset Repositioning</h4></legend>
 								<p>In order to provide a full repositioning service to equipment providers and ocean liners, we also reposition generator 
 										sets or "gensets". Typically, we can move anywhere from one to 18 gensets on a flatbed, depending on type. 
 										Whether they're headed to a port, rail yard, or other facility, we will get them there efficiently.
@@ -161,7 +165,7 @@
 						<li>Sign-on Bonus</li>
 						<li>Recruitment and Referral bonuses</li>
 					</ul>
-					<p>Fill out the <a href="https://web.archive.org/web/20161128093545/https://www.rite-waytransport.com/DriverApp.aspx" target="_blank">
+					<p>Fill out the <a href="https://www.rite-waytransport.com/DriverApp.aspx" target="_blank">
 					Pre-Employment Application</a> and put <strong>Jacksonville</strong> in the terminal location field.</p>
 				</div>
 
@@ -170,10 +174,9 @@
 
 		<section id="opportunities" class="content-section">
 				<div class="container">
-					<h2 class="title">Carrier Opportunities</h2>
+					<h2 class="title opportunities">Carrier Opportunities</h2>
 					<div class="new-carrier">
-						<fieldset>
-							<legend><h3 class="inland-carrier">Become an Inland Carrier</h3></legend>
+							<h3 class="inland-carrier">Become an Inland Carrier</h3>
 							<p class="click packet"><i class="fas fa-download"></i> <a href="./assets/Inland-Logistics-Solutions-Carrier-Set-Up-Packet.pdf" 
 																																					download="Inland-Logistics-Solutions-Carrier-Set-Up-Packet" 
 																																					class="download">Download</a> the Carrier Packet</p>
@@ -183,25 +186,23 @@
 							<p class="packet-return">*Along with a copy of your W9, Operating Authority, and an Insurance Certificate Showing Inland 
 							Logistics Solutions as the Certificate Holder. One of our team members will be in touch to verify 
 							your information and complete setup if you meet our requirements.</p>
-						</fieldset>	
 					</div>		
 				</div>
 		</section>
 
-		<section id="contact">
+		<section id="contact" class="content-section">
 				<div class="container">
 					<h2 class="title">Contact Us</h2>
 
 					<div class="form">
 						<form id="form">
-							<fieldset>
-								<legend>Get in Touch</legend>
-								Name: <input type="text" placeholder="first"> <input type="text" placeholder="last">
-								Email: <input type="email">
-								Confirm Email: <input type="email">
-								Message: <textarea cols="50" rows="5" 
-								placeholder="I would like to inquire about repositioning a container from Tatooine to Alderaan..."></textarea>
-							</fieldset>
+								<h3>Get in Touch</h3>
+								<div class="form-input"><input type="text" placeholder="first name"> <input type="text" placeholder="last name"></div>
+								<div class="form-input"><input type="email" placeholder="youremail@you.com"></div>
+								<div class="form-input"><textarea cols="50" rows="5" 
+									placeholder="I would like to inquire about repositioning a container from Tatooine to Alderaan..."></textarea>
+								</div>
+								<button type="submit">SUBMIT</button>
 						</form>
 					</div>
 				</div>
