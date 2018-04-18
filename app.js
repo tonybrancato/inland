@@ -22,23 +22,9 @@ function smoothScroll() {
       } // End if
     });
   }
-  
-  function hideNav() {
-    // hide .navbar first
-    $(".navbar").hide();
-  
-    // fade in .navbar
-    $(function () {
-        $(window).scroll(function () {
-  
-                  // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 500) {
-                $('.navbar').fadeIn();
-            } else {
-                $('.navbar').fadeOut();
-            }
-        });
-    });
+
+  function showButtons () {
+    $('.experts').fadeIn(850);
   }
   
   function getYear() {
@@ -49,6 +35,6 @@ function smoothScroll() {
   
   $(function (){
     smoothScroll();
-    // hideNav();
+    showButtons();
     $( ".copyright" ).append( `<span>&copy; ${getYear()} Inland Logistics Solutions. All Rights Reserved.`); // copyright
   })
