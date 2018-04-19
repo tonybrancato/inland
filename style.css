@@ -30,6 +30,20 @@ a {
   font-size: 1.05em;
 }
 
+/* Creates a border that expands from the center on hover */
+
+.nav-link::after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px rgb(2, 113, 187);  
+  transform: scaleX(0);  
+  transition: transform 400ms ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); 
+}
+
 #about {
   background-image: linear-gradient( to bottom, rgb(26, 126, 193, .75), rgba(101, 169, 215, 0.301)), url('./imgs/port.jpg');
   filter: contrast(1.7);
@@ -45,6 +59,10 @@ a {
   text-shadow: 1px 2px 4px black;
   background-size: cover;
   height: 100vh;
+}
+
+#drayage a {
+  color: #ffeb00;
 }
 
 #contact {
@@ -135,21 +153,8 @@ input {
   padding: 100px 20px 0 20px;
 }
 
-.repositioning-method {
-  border-right: 1px solid grey;
-}
-
-.repositioning-types {
-  border-top: 1px solid grey;
-}
-
 .repositioning-type, #repositioning p {
   padding: 10px 20px;
-}
-
-.middle-col {
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
 }
 
 .text-center {
@@ -231,6 +236,15 @@ legend {
   color: greenyellow;
 }
 
+footer p{
+  font-size: 9pt;
+  margin-bottom: 0;
+}
+
+.content-section {
+  padding: 100px 20px 40px 20px;
+}
+
 @media (min-width: 300px) and (max-width: 1024px) {
   #about, #repositioning, #drayage, #opportunities, #contact {
     height: 100%;
@@ -249,6 +263,11 @@ legend {
 
   .new-carrier {
     max-width: 100%;
+    padding: 0;
+  }
+
+  .packet {
+    font-size: 1.3em;
   }
 
   .packet-return {
@@ -271,8 +290,18 @@ legend {
     padding: 10px;
   }
 
-  #repositioning p  {
+  p, ul  {
     font-size: 11pt;
+  }
+
+  #repositioning p  {
     padding: 0;
   }
+
+  .opportunities {
+    text-shadow: 1px 1px 4px white;
+  }
+
+
+
 }
