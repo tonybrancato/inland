@@ -194,17 +194,30 @@
 		<section id="contact" class="content-section">
 				<div class="container">
 					<h2 class="title">Contact Us</h2>
-
-					<div class="form">
-						<form id="form" name="contact" data-netlify="true" method="POST">
-								<h3>Get in Touch</h3>
-								<div class="form-input"><input type="text" name="first-name" placeholder="first name"> <input type="text" name="last-name" placeholder="last name"></div>
-								<div class="form-input"><input type="email" name="email" placeholder="youremail@you.com"></div>
-								<div class="form-input"><textarea cols="50" name="message" rows="5" 
-									placeholder="I would like to inquire about repositioning a container from Tatooine to Alderaan..."></textarea>
+					<div class="row">
+						<div class="contact-info col-md">
+							<div class="contact-item"><i class="space fas fa-envelope"></i><p class="contact-sub">inland@inlandls.com</p></div>
+							<div class="contact-item"><i class="space fas fa-mobile-alt"></i><p class="contact-sub">888-846-5263</p></div>
+							<div class="contact-item"><i class="space fas fa-map-marker-alt"></i>
+								<div class="contact-sub address">
+									<span>9485 Regency Square Blvd Suite 104</span>
+									<span style="display: block;">Jacksonville, Florida 32225</span>								
 								</div>
-								<button type="submit">SUBMIT</button>
-						</form>
+							</div>
+						</div>
+						<div class="form col-md">
+							<form id="form" name="contact" data-netlify="true" method="POST">
+									<h3>Get in Touch</h3>
+									<div class="form-input"><input type="text" name="name" placeholder="first & last name"></div>
+									<div class="form-input"><input type="email" name="email" placeholder="youremail@you.com"></div>
+									<div class="form-input"><input type="tel" name="phone" placeholder="phone number"></div>
+									
+									<div class="form-input"><textarea rows="5" name="message" 
+										placeholder="I would like to inquire about repositioning a container from Tatooine to Alderaan..."></textarea>
+									</div>
+									<button type="submit">SUBMIT</button>
+							</form>
+						</div>
 					</div>
 				</div>
 		</section>
