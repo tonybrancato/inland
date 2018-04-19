@@ -45,19 +45,32 @@ a {
 }
 
 #about {
-  background-image: linear-gradient( to bottom, rgb(26, 126, 193, .75), rgba(101, 169, 215, 0.301)), url('./imgs/port.jpg');
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: -moz-linear-gradient( to bottom, rgba(26, 126, 193, .75), rgba(101, 169, 215, 0.301)), url('./imgs/port.jpg'); 
+  background-image: -webkit-linear-gradient( bottom, rgba(26, 126, 193, .75), rgba(101, 169, 215, 0.301)), url('./imgs/port.jpg'); 
+  background-image: linear-gradient( to bottom, rgba(26, 126, 193, .75), rgba(101, 169, 215, 0.301)), url('./imgs/port.jpg');
   filter: contrast(1.7);
   text-shadow: 1px 2px 4px black;
   color: white;
-  background-size: cover;
   height: 100vh;
 }
 
 #drayage {
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size:cover;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-image: -moz-linear-gradient(to bottom, rgba(26, 126, 193, .95), rgba(101, 169, 215, 0.6)), url('./imgs/loading.jpg');
+  background-image: -webkit-linear-gradient(to bottom, rgba(26, 126, 193, .95), rgba(101, 169, 215, 0.6)), url('./imgs/loading.jpg');
   background-image: linear-gradient(to bottom, rgba(26, 126, 193, .95), rgba(101, 169, 215, 0.6)), url('./imgs/loading.jpg');
+  
   color: white;
   text-shadow: 1px 2px 4px black;
-  background-size: cover;
   height: 100vh;
 }
 
@@ -81,18 +94,17 @@ a {
 }
 
 #repositioning {
-  background-image: linear-gradient(to top right, rgba(128, 128, 128, .75), rgba(0, 76, 138, .75)),
-                    url('./imgs/containers.jpg');
+  background-image: linear-gradient(to top right, rgba(128, 128, 128, .75), rgba(0, 76, 138, .75)), url('./imgs/containers.jpg');
+  background-image: -webkit-linear-gradient(to top right, rgba(128, 128, 128, .75), rgba(0, 76, 138, .75)), url('./imgs/containers.jpg');
+  background-image: -moz-linear-gradient(to top right, rgba(128, 128, 128, .75), rgba(0, 76, 138, .75)), url('./imgs/containers.jpg');
   background-size: cover;
   filter: contrast(1.9);
-  background-attachment: fixed;
   color: white;
   text-shadow: 1px 1px 1.5px black;
 }
 
 #repositioning fieldset {
   border: 4px ridge white;
-  /* border-style:  */
 }
 
 #opportunities {
